@@ -6,7 +6,7 @@ services:
     ports:
       - 4457:5432
     env_file:
-      - .env.test
+      - ../.github/workflow/.env.test
 
   node_app_test:
     container_name: node_app_test
@@ -16,4 +16,4 @@ services:
     depends_on:
       - drivenops_db_test 
     env_file:
-      - .env.test
+      - ../.github/workflow/.env.test
