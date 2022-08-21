@@ -20,7 +20,7 @@ app.post("/students", async (req: Request, res: Response) => {
 
   res.sendStatus(201); // created
 });
-//para fazer novo commit 3
+//para fazer novo commit 323
 app.get("/students/random", async (req: Request, res: Response) => {
   const students = await prisma.student.findMany();
   if (students.length > 0) {
