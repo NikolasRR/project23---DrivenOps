@@ -6,6 +6,7 @@ function App() {
     
   useEffect(async () => {
     const API_URL = process.env.REACT_APP_BASE_URL;
+    console.log(API_URL); //esse CD do git e nada é a mesma coisa
     try {
       const response = await axios.get(`${API_URL}/testeteste`);
       const student = response.data;
