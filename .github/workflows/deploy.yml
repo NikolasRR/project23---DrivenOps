@@ -10,9 +10,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-          ref: main
+        run: git pull origin main
       - name: Create back-end env file
         uses: SpicyPizza/create-envfile@v1.3
         with:
