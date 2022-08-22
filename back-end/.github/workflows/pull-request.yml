@@ -3,9 +3,6 @@ on: [pull_request]
 jobs:
   PullRequest:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: back-end
     steps:
       - name: Check out
         uses: actions/checkout@v3
