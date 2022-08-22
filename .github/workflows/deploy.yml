@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          ref: ${{ github.event.pull_request.head.ref }}
+          ref: main
       - name: Create back-end env file
         uses: SpicyPizza/create-envfile@v1.3
         with:
